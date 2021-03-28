@@ -11,7 +11,7 @@ namespace BillCalc.DAL.EF
 
         static BillCalcContext()
         {
-            Database.SetInitializer<BillCalcContext>(new StoreDbInitializer());
+            Database.SetInitializer(new StoreDbInitializer());
         }
 
         public BillCalcContext(string connectionString)

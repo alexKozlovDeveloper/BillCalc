@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace BillCalc.DAL.Entities
+
+namespace BillCalc.BLL.DTO
 {
-    public class Deal
+    public class DealDTO
     {
         public int Id { get; set; }
         public string Description { get; set; }
         public DateTime Date { get; set; }
 
         public int HappeningId { get; set; }
-        public Happening Happening { get; set; }
 
-        public ICollection<Client> Clients { get; set; }
+        public ICollection<int> Clients { get; set; }
 
-        public Deal()
+        public DealDTO()
         {
-            Clients = new List<Client>();
+            Clients = new List<int>();
         }
     }
 }

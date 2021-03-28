@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillCalc.WEB", "BillCalc.WE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillCalc.DAL", "BillCalc.DAL\BillCalc.DAL.csproj", "{D4D9BDFD-3EB2-4AB5-8C96-8952A777DE7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillCalc.BLL", "BillCalc.BLL\BillCalc.BLL.csproj", "{45C6130F-C38C-43DA-9889-CD5EA0CDC49B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D4D9BDFD-3EB2-4AB5-8C96-8952A777DE7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4D9BDFD-3EB2-4AB5-8C96-8952A777DE7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4D9BDFD-3EB2-4AB5-8C96-8952A777DE7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C6130F-C38C-43DA-9889-CD5EA0CDC49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C6130F-C38C-43DA-9889-CD5EA0CDC49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C6130F-C38C-43DA-9889-CD5EA0CDC49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C6130F-C38C-43DA-9889-CD5EA0CDC49B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
