@@ -33,9 +33,21 @@ namespace BillCalc.BLL.Services
         {
             var mapper = new MapperConfiguration(cfg => cfg.CreateMap<Deal, DealDTO>()).CreateMapper();
 
-            var deals = Database.Deals.GetAll().Where(a => a.HappeningId == happeningId);
+            var deals = Database.Deals.Find(a => a.HappeningId == happeningId);
 
             return mapper.Map<IEnumerable<Deal>, List<DealDTO>>(deals);
+        }
+
+        public void AddHappening(HappeningDTO happeningDto)
+        {
+            var happening = new Happening
+            {
+                Name = happeningDto.Name,
+                Date = happeningDto.Date
+            };
+
+            Database.Happenings.Create(happening);
+            Database.Save();
         }
 
         public void Dispose()

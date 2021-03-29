@@ -8,6 +8,7 @@ namespace BillCalc.BLL.Interfaces
         IEnumerable<ClientDTO> GetClients();
         IEnumerable<HappeningDTO> GetHappenings();
         IEnumerable<DealDTO> GetDeals(int happeningId);
+        void AddHappening(HappeningDTO happeningDto);
         void Dispose();
     }
 }

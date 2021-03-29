@@ -1,8 +1,10 @@
-﻿@model IEnumerable<BillCalc.WEB.Models.HappeningViewModel>
+﻿@model IEnumerable<BillCalc.WEB.Models.DealViewModel>
 
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "ShowDeals";
 }
+
+<h2>ShowDeals</h2>
 
 <table class="table">
     <tr>
@@ -10,7 +12,7 @@
             @Html.DisplayNameFor(model => model.Id)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.Description)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Date)
@@ -25,17 +27,19 @@
                 @Html.DisplayFor(modelItem => item.Id)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Date)
             </td>
             <td>
-                @Html.ActionLink("Show Deals", "Deals", new { happeningId = item.Id })
+                
             </td>
         </tr>
     }
 
 </table>
 
-@Html.ActionLink("Add Happening", "CreateHappening")
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
