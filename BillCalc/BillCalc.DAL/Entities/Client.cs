@@ -8,7 +8,7 @@ namespace BillCalc.DAL.Entities
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
 
-        public ICollection<Deal> Deals { get; set; }
+        public virtual ICollection<Deal> Deals { get; set; }
 
         public Client()
         {

@@ -15,7 +15,8 @@ namespace BillCalc.BLL.Infrastructure
 
         public override void Load()
         {
-            Bind<IUnitOfWork>().To<EFUnitOfWork>().WithConstructorArgument(_connectionString);
+            Bind<IUnitOfWork>().To<EFUnitOfWork>()
+                .WithConstructorArgument(_connectionString);
         }
     }
 }
